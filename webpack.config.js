@@ -1,5 +1,5 @@
-import 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'production', // 'development',
@@ -35,7 +35,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff2?|png)$/i,
+        test: /\.(woff2?|png|jpg)$/i,
         use: {
           loader: 'url-loader',
           options: {
