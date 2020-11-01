@@ -26,16 +26,7 @@ module.exports = {
         exclude: '/node_modules/',
       },
       {
-        test: /\.scss$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'resolve-url-loader',
-          'sass-loader',
-        ],
-      },
-      {
-        test: /\.(woff2?|png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         use: {
           loader: 'url-loader',
           options: {
@@ -44,6 +35,14 @@ module.exports = {
             name: './assets/[hash].[ext]',
           },
         },
+      },
+      {
+        test: /\.(ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       },
     ],
   },
