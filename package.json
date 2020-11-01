@@ -1,7 +1,6 @@
 {
   "name": "tripal-v3",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,6 +30,16 @@
     "prettier": "^2.1.2",
     "typescript-eslint": "0.0.1-alpha.0",
     "webpack": "^5.3.1",
-    "webpack-cli": "^4.1.0"
-  }
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lightwater2/tripal-v3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lightwater2/tripal-v3/issues"
+  },
+  "homepage": "https://github.com/lightwater2/tripal-v3#readme",
+  "description": ""
 }
