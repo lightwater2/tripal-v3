@@ -1,8 +1,11 @@
 import * as React from 'react';
+import { useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { Grid } from '@material-ui/core';
 
-export default () => (
+export default () => {
+  
+  return (
   <NavigationContainer>
     <GridContainer container justify="flex-start" alignItems="center" spacing={1}>
       <Title item lg={10}>TRIPAL</Title>
@@ -10,7 +13,8 @@ export default () => (
       <Menu item lg={1}>CONTACT</Menu>
     </GridContainer>
   </NavigationContainer>
-);
+  )
+};
 const NavigationContainer = styled.div`
   width:100%;
   float:left;

@@ -13,5 +13,6 @@ export default createGlobalStyle`
     html {
         overflow-x: hidden;
         overflow-y: auto;
+        scroll-behavior: smooth;
     }
 `;

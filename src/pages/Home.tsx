@@ -4,6 +4,7 @@ import { FullSizeBanner } from 'styled/components';
 const titleImage = require('assets/titleImage.png').default;
 const iphoneImage = require('assets/iphoneImage.png').default;
 const essenceImage = require('assets/essenceImage.png').default;
+const doorImage = require('assets/doorImage.png').default;
 export default () => (
   <>
     <FullSizeBanner img={titleImage} height={1080} width={1920}>
@@ -37,6 +38,39 @@ export default () => (
       </Context4>
       <EssenceImage src={essenceImage}/>
     </Background3>
+    <FullSizeBanner img={doorImage} width={1920} height={1281}>
+      <Head6>
+        TRAVEL IS GOING TO BE PERFECT WITH THE TRIPAL APP
+      </Head6>
+      <Context5>
+        With a just simple app, you can enjoy restaurants and activities as the local do. User-friendly interface offers a variety of activities in the region you want.
+      </Context5>
+    </FullSizeBanner>
+    <Background4>
+      <Head7>
+        CORE VALUES
+      </Head7>
+      <Context6>
+      Team Tripal is making the service we only need the most. 
+      <br />
+      We will make everything possible for local travelers suffering from various difficulties.
+      </Context6>
+    </Background4>
+    <Background5>
+      <Head8>CONTACT</Head8>
+      <Context7>
+        e-Mail &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Bold>tripal2030@gmail.com</Bold>
+        <br />
+        Phone  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Bold>+82)10 9671-1131</Bold>
+        <br />
+        Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <Bold>서울특별시 영등포구 경인로 77길 49, 109동 상가2층 201-137호</Bold>
+        
+
+      </Context7>
+    </Background5>
   </>
 );
 const Head1 = styled.div`
@@ -121,7 +155,7 @@ const Context4 = styled.div`
   font-size: 25px;
   font-family: 'Poppins';
   font-weight: 600;
-  color:#707070;
+  color: #707070;
   margin-left: 278px;
   width: 710px;
   letter-spacing: 0.25px;
@@ -131,4 +165,66 @@ const EssenceImage = styled.img`
   position:relative;
   left:1009px;
   top: -370px;
+`;
+const Head6 = styled.div`
+  font-size: 50px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: white;
+  margin-left: 294px;
+  padding-top: 225px;
+`;
+const Context5 = styled.div`
+  font-size: 25px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: white;
+  width: 1025px;
+  margin-left: 416px;
+  padding-top: 70px;
+  line-height:1.6;
+`;
+const Background4 = styled.div`
+  height: 1080px;
+`;
+const Head7 = styled.div`
+  font-size: 40px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #707070;
+  margin-left: 278px;
+  padding-top: 340px;
+
+`;
+const Context6 = styled.div`
+  font-size: 25px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #707070;
+  margin-left: 278px;
+  padding-top: 20px;
+  letter-spacing: 0.25px;
+  line-height:1.6;
+`;
+const Background5 = styled.div`
+  height: 1080px;
+`;
+const Head8 = styled.div`
+  font-size: 40px;
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #707070;
+  margin-left: 286px;
+`;
+const Context7 = styled.div`
+  font-size: 25px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  color: #707070;
+  margin-left: 286px;
+  padding-top: 40px;
+  line-height:2.5;
+`;
+const Bold = styled.span`
+  color: black;
 `;
