@@ -16,7 +16,7 @@ const Foot = styled.div`
   background-color: #6C766E;
 `;
 const Copyright = styled.div`
-  font-size: 24px;
+  font-size: calc(0.782vw + 10px);
   padding-top: 120px;
   text-align:center;
   font-family: 'Poppins';
@@ -30,4 +30,5 @@ const Menu = styled.div`
   font-weight: 300;
   color: white;
   line-height: 2;
+  font-size: calc(0.782vw + 5px);
 `;

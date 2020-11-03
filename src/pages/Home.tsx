@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { Grid } from '@material-ui/core';
 import { FullSizeBanner } from 'styled/components';
 const titleImage = require('assets/titleImage.png').default;
 const iphoneImage = require('assets/iphoneImage.png').default;
@@ -26,17 +27,16 @@ export default () => (
         The activities are best know by Tripal!</Context3>
     </FullSizeBanner>
     <Background3>
-      <Head5>ESSENCE OF TRAVEL</Head5>
-      <Context4>
-        Various platforms show off their technology,
-        <br />
-        but we care more people than its technology. 
-        <br />
-        Our core value is the connection between people.
-        <br />
-        Find the answer from Tripal, which you've never found.
-      </Context4>
+      <Block1 container direction="row" justify="space-between" alignItems="center">
+        <Context4>
+          <Head5>ESSENCE OF TRAVEL</Head5>
+          Various platforms show off their technology,
+          but we care more people than its technology.
+          Our core value is the connection between people.
+          Find the answer from Tripal, which you've never found.
+        </Context4>
       <EssenceImage src={essenceImage}/>
+      </Block1>
     </Background3>
     <FullSizeBanner img={doorImage} width={1920} height={1281}>
       <Head6>
@@ -74,155 +74,163 @@ export default () => (
   </>
 );
 const Head1 = styled.div`
-  font-size:40px;
+  font-size:calc(1.563vw + 10px);
   font-family: 'Poppins';
   font-weight: 500;
   color:white;
-  padding-left: 278px;
-  padding-top: 674px;
-  height: 56px;
+  padding-left: 14.479vw;
+  padding-top: 35.104vw;
+  height: 2.917vw;
 `;
 const Head2 = styled.div`
-  font-size:80px;
+  font-size:calc(3.127vw + 20px);
   font-family: 'Poppins';
   font-weight: 800;
   color:white;
-  margin-top: 62px;
-  padding-left: 278px;
+  margin-top: 2.5vw;
+  padding-left: 14.479vw;
   letter-spacing: 4px;
 `;
 const Head3 = styled.div`
-  font-size: 40px;
+  font-size: calc(1.303vw + 15px);
   font-family: 'Poppins';
   font-weight: 700;
   color:#707070;
-  padding-top: 445px;
-  padding-left: 278px;
+  padding-top: 23.177vw;
+  padding-left: 14.479vw;
+  margin-right: 15.885vw;
 `;
 const Context1 = styled.div`
-  width: 1329px;
-  font-size: 25px;
+  width: 69.219vw;
+  font-size: calc(0.782vw + 10px);
   font-family: 'Poppins';
   color:#707070;
-  padding-top: 21px;
-  margin-left: 278px;
+  padding-top: 1.094vw;
+  margin-left: 14.479vw;
   line-height:1.5;
+  margin-right: 15.885vw;
 `;
 const Context2 = styled.div`
-  width: 1329px;
-  font-size: 25px;
+  width: 69.219vw;
+  font-size: calc(0.782vw + 10px);
   font-family: 'Poppins';
   font-weight: 500;
   color:#707070;
-  margin-left: 278px;
+  margin-left: 14.479vw;
   line-height:1.5;
+  margin-right: 15.885vw;
 `;
 const Background2 = styled.div`
-  height:1080px;
+  height:calc(48.438vw + 150px);
 `;
 const Head4 = styled.div`
-  font-size: 40px;
+  font-size: calc(1.303vw + 15px);
   font-family: 'Poppins';
   font-weight: 700;
   color:white;
-  padding-top:253px;
-  padding-left:278px;
+  padding-top:calc(11.615vw + 30px);
+  padding-left:14.479vw;
 `;
 const Context3 = styled.div`
-  width: 720px;
-  font-size: 25px;
+  width: calc(27.084vw + 150px);
+  font-size: calc(0.782vw + 10px);
   font-family: 'Poppins';
   font-weight: 500;
   color:white;
-  padding-top: 21px;
-  margin-left: 278px;
+  padding-top: 1.094vw;
+  margin-left: 14.479vw;
   line-height:1.6;
   letter-spacing: 0.25px;
 `;
 const Background3 = styled.div`
-  height:1080px;
+  height:calc(48.438vw + 200px);
+`;
+const Block1 = styled(Grid)`
+  padding-top:16vw;
+  padding-right:10vw;
+  
+  padding-left: 14.479vw;
 `;
 const Head5 = styled.div`
-  font-size: 40px;
+  font-size: calc(1.303vw + 15px);
   font-family: 'Poppins';
   font-weight: 700;
   color:#707070;
-  padding-top: 445px;
-  padding-left: 278px;
   line-height:1.6;
+  
 `;
+
 const Context4 = styled.div`
-  font-size: 25px;
+  font-size: calc(0.782vw + 10px);
   font-family: 'Poppins';
   font-weight: 600;
   color: #707070;
-  margin-left: 278px;
-  width: 710px;
+  width: calc(25.208vw + 150px);
   letter-spacing: 0.25px;
   line-height:1.6;
 `;
 const EssenceImage = styled.img`
-  position:relative;
-  left:1009px;
-  top: -370px;
+  width:calc(34.636vw + 50px);
+  margin:0 30px;
 `;
 const Head6 = styled.div`
-  font-size: 50px;
+  font-size: calc(1.823vw + 15px);
   font-family: 'Poppins';
   font-weight: 700;
   color: white;
-  margin-left: 294px;
-  padding-top: 225px;
+  margin-left: 15.313vw;
+  padding-top: 11.719vw;
 `;
 const Context5 = styled.div`
-  font-size: 25px;
+  font-size: calc(0.782vw + 10px);
   font-family: 'Poppins';
   font-weight: 600;
   color: white;
-  width: 1025px;
-  margin-left: 416px;
-  padding-top: 70px;
+  width: 53.385vw;
+  margin-left: 21.667vw;
+  padding-top: 3.646vw;
   line-height:1.6;
 `;
 const Background4 = styled.div`
-  height: 1080px;
+  height: calc(48.438vw + 200px);
 `;
 const Head7 = styled.div`
-  font-size: 40px;
+  font-size: calc(1.303vw + 15px);
   font-family: 'Poppins';
   font-weight: 700;
   color: #707070;
-  margin-left: 278px;
-  padding-top: 340px;
+  margin-left: 14.479vw;
+  padding-top: 17.708vw;
 
 `;
 const Context6 = styled.div`
-  font-size: 25px;
+  font-size: calc(0.782vw + 10px);
   font-family: 'Poppins';
   font-weight: 600;
   color: #707070;
-  margin-left: 278px;
-  padding-top: 20px;
+  margin-left: 14.479vw;
+  margin-right: 6vw;
+  padding-top: 1.042vw;
   letter-spacing: 0.25px;
   line-height:1.6;
 `;
 const Background5 = styled.div`
-  height: 1080px;
+  height: calc(48.438vw + 200px);
 `;
 const Head8 = styled.div`
-  font-size: 40px;
+  font-size: calc(1.303vw + 15px);
   font-family: 'Poppins';
   font-weight: 700;
   color: #707070;
-  margin-left: 286px;
+  margin-left: 14.896vw;
 `;
 const Context7 = styled.div`
-  font-size: 25px;
+  font-size: calc(0.782vw + 10px);
   font-family: 'Poppins';
   font-weight: 600;
   color: #707070;
-  margin-left: 286px;
-  padding-top: 40px;
+  margin-left: 14.896vw;
+  padding-top: 2.083vw;
   line-height:2.5;
 `;
 const Bold = styled.span`
